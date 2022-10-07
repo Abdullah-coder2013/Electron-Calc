@@ -5,7 +5,7 @@ const createWindow = () => {
     width: 348,
     height: 590,
     icon: "./favicon.ico",
-    // frame: false,
+    frame: false,
     webPreferences: {
       nodeIntegration: true,
       preload: path.join(__dirname, "src/renderer.js")
@@ -13,8 +13,8 @@ const createWindow = () => {
   });
 
   win.loadFile("./src/index.html");
-  // win.setMenu(null)
-  // win.resizable = false;
+  win.setMenu(null)
+  win.resizable = false;
   
 };
 
