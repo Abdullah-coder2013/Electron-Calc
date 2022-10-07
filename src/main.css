@@ -70,7 +70,7 @@ body {
     -webkit-user-select: none;
     -webkit-app-region: drag;
 }
-#form,
+input,
 button {
     -webkit-app-region: no-drag;
 }
