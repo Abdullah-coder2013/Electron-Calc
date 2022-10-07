@@ -4,3 +4,4 @@ out/
 .hintrc
 run.bat
 tailwind.config.js
+runc.bat
