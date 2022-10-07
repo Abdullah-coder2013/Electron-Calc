@@ -65,3 +65,12 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
 }
+
+#main {
+    -webkit-user-select: none;
+    -webkit-app-region: drag;
+}
+#form,
+button {
+    -webkit-app-region: no-drag;
+}

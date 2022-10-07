@@ -753,6 +753,16 @@ body {
   overflow-x: hidden;
 }
 
+#main {
+  -webkit-user-select: none;
+  -webkit-app-region: drag;
+}
+
+#form,
+button {
+  -webkit-app-region: no-drag;
+}
+
 .hover\:bg-sky-500:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));

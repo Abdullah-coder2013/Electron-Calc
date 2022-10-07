@@ -3,8 +3,9 @@ const path = require("path");
 const createWindow = () => {
   const win = new BrowserWindow({
     width: 348,
-    height: 610,
+    height: 590,
     icon: "./favicon.ico",
+    frame: false,
     webPreferences: {
       nodeIntegration: true,
       preload: path.join(__dirname, "src/renderer.js")
