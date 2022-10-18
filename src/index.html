@@ -8,59 +8,56 @@
     <link rel="stylesheet" href="../dist/tailwind.css">
 </head>
 
-<body onload="window.scrollTo(0,150)" class="bg-slate-600">
-    <div id="main">
-    
-        <div id="buttons" class="grid grid-cols-4 gap-4 border-2 border-slate-700 bg-slate-600 rounded-xl p-2 shadow-xl">
+<!-- <body onload="window.scrollTo(0,150)" class="bg-slate-600"> -->
+<body onload="window.scrollTo(0,95)" id="body" class="bg-slate-600">
+    <div id="calculator" class="grid grid-cols-4 gap-4 bg-slate-600 rounded-xl p-2 shadow-xl">
+        <div class="col-span-4">
             <input type="text" name="submit" id="result"
-                class="col-span-4 mt-2 mb-2 rounded-xl p-4 text-xl bg-gray-700 text-white shadow-inner" placeholder="">
-            <button type="button" id="btn-1"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">1</button>
-            <button type="button" id="btn-2"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">2</button>
-            <button type="button" id="btn-3"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">3</button>
-            <button type="button" id="btn-4"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">4</button>
-            <button type="button" id="btn-5"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">5</button>
-            <button type="button" id="btn-6"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">6</button>
-            <button type="button" id="btn-7"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">7</button>
-            <button type="button" id="btn-8"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">8</button>
-            <button type="button" id="btn-9"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">9</button>
-            <button type="button" id="btn-0"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-300 ease-in-out">0</button>
-            <button type="button" id="btn-plus"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-300 ease-in-out">+</button>
-            <button type="button" id="btn-minus"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-300 ease-in-out">-</button>
-            <button type="button" id="btn-times"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-300 ease-in-out">x</button>
-            <button type="button" id="btn-divide"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-300 ease-in-out">÷</button>
-            <button type="button" id="btn-mod"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-300 ease-in-out">%</button>
-            <button type="button" id="btn-bracket-open"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-300 ease-in-out">(</button>
-            <button type="button" id="btn-bracket-close"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-300 ease-in-out">)</button>
+                class="rounded-xl p-4 text-xl bg-gray-700 text-white shadow-inner" placeholder="0" dir="ltr" />
             <button type="button" id="b"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl text-lg transition duration-300 ease-in-out"><img
+                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl text-lg transition duration-100 ease-in-out"><img
                     src="./backspace.svg" alt="backspace"></button>
-            <button type="button" id="c"
-                class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl text-lg transition duration-300 ease-in-out">C</button>
-            <div class="flex flex-col">
-                <button type="button" id="dot"
-                    class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl text-lg transition duration-300 ease-in-out">.</button>
-                <button type="button" id="e"
-                    class="bg-sky-400 hover:bg-sky-500 active:bg-sky-700 rounded-xl border-sky-800 text-lg transition duration-300 ease-in-out">=</button>
-            </div>
-            
         </div>
+        <button type="button" id="btn-divide"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-100 ease-in-out">÷</button>
+        <button type="button" id="btn-mod"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-100 ease-in-out">%</button>
+        <button type="button" id="c"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl text-lg transition duration-100 ease-in-out">C</button>
+        <button type="button" id="dot"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl text-lg transition duration-100 ease-in-out">.</button>
+        <button type="button" id="btn-7"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">7</button>
+        <button type="button" id="btn-8"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">8</button>
+        <button type="button" id="btn-9"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">9</button>
+        <button type="button" id="btn-plus"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-100 ease-in-out">+</button>
+        <button type="button" id="btn-4"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">4</button>
+        <button type="button" id="btn-5"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">5</button>
+        <button type="button" id="btn-6"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">6</button>
+        <button type="button" id="btn-minus"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-100 ease-in-out">-</button>
+        <button type="button" id="btn-1"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">1</button>
+        <button type="button" id="btn-2"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">2</button>
+        <button type="button" id="btn-3"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">3</button>
+        <button type="button" id="btn-times"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-100 ease-in-out">x</button>
+        <button type="button" id="btn-bracket-open"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-100 ease-in-out">(</button>
+        <button type="button" id="btn-0"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-md text-lg transition duration-100 ease-in-out">0</button>
+        <button type="button" id="btn-bracket-close"
+            class="border-2 border-slate-700 bg-slate-500 hover:bg-sky-500 active:bg-sky-700 rounded-xl backdrop-blur-sm text-lg transition duration-100 ease-in-out">)</button>
+        <button type="button" id="e"
+            class="bg-sky-400 hover:bg-sky-500 active:bg-sky-700 rounded-xl border-sky-700 text-lg transition duration-100 ease-in-out">=</button>
     </div>
     <script src="./renderer.js"></script>
 </body>
