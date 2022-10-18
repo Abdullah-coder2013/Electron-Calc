@@ -1,12 +1,14 @@
 # Electron-Calc
 
 It is a Calculator built with electron.
+
 ## Dependencies
 
 `electron`
 `tailwindcss`
 
 ## Start
+
 Extract the zip file you downloaded and open the terminal in that directory.
 
 Type `npm i electron tailwindcss` in the terminal.
