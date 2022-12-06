@@ -72,7 +72,7 @@ document.getElementById("result").addEventListener("keypress", function (e) {
 
 function run() {
   let resultt = eval(result.value);
-  console.log(resultt);
+  console.log(result.value + resultt);
   result.value = resultt;
   lastOperation = "=";
   question = resultt;

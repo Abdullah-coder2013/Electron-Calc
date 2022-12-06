@@ -22,3 +22,8 @@ In that file type `"./src/**/*.{html,js}"` in the content object.
 Then run `npm run build:css` in the terminal.
 
 In another terminal run `npm start` which should start the application.
+
+### Windows
+
+For Windows do the instructions above.
+Instead running `npm start` in the terminal you can run the `JsCalc.exe` file.
